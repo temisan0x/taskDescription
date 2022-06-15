@@ -5,7 +5,7 @@ import axios from 'axios'
 // to enable it get the required data
 const getAssignedUser = async (company_id, token) => {
     
-    const URL = "https://stage.api.sloovi.com/team?product=outreach&company_id=" + company_id
+    const URL = "https://stage.api.sloovi.com/team?product=outreach&company_id=" 
     
     const config = {
         headers: {   

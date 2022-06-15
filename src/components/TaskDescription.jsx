@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./../styles/taskDescription.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressCard, faCalendarAlt, faClock } from '@fortawesome/free-solid-svg-icons';
-// import { useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 // {
 //                 assigned_user:  <id value from /team api response >, 
@@ -15,8 +15,8 @@ import { faAddressCard, faCalendarAlt, faClock } from '@fortawesome/free-solid-s
 
 const TaskBar = () => {
 
-    // const { assigneduser } = useSelector((state) => state.assignedUser)
- 
+    const { assignedUser } = useSelector((state) => state.assignedUser)
+    console.log(assignedUser)
     // const { user } = useSelector((state) => state.auth)
     // console.log(user);
 
@@ -25,7 +25,7 @@ const TaskBar = () => {
     const [open, setOpen] = useState(false)
 
     const [value, setValue] = useState({
-        assigned_user: "user_4ee4cf67ad474a27988bc0afb84cf472",
+        assigned_user: "company_4ee4cf67ad474a27988bc0afb84cf472",
         task_date: "",
         task_time: "",
         is_completed: "1",
@@ -111,11 +111,11 @@ const TaskBar = () => {
                         value={value.assigned_user}
                         onChange={handleChange}
                     >
-                        {/* {
-                            assigneduser.results.data.map((set, index) => (
+                        {
+                            assignedUser.results.data.map((set, index) => (
                                 <option key={index}>{ set.name }</option>
                             ))
-                        } */}
+                        }
                     </select>
                 </div>
 
