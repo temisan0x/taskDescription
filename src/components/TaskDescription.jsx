@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import "./../styles/taskDescription.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressCard, faCalendarAlt, faClock } from '@fortawesome/free-solid-svg-icons';
-import { useSelector } from 'react-redux';
-
+// import { useSelector } from 'react-redux';
 
 // {
 //                 assigned_user:  <id value from /team api response >, 
@@ -16,10 +15,10 @@ import { useSelector } from 'react-redux';
 
 const TaskBar = () => {
 
-    const { assigneduser } = useSelector((state) => state.assignedUser)
-    console.log(assigneduser)
-    const { user } = useSelector((state) => state.auth)
-    console.log(user);
+    // const { assigneduser } = useSelector((state) => state.assignedUser)
+ 
+    // const { user } = useSelector((state) => state.auth)
+    // console.log(user);
 
     // const dispatch = useDispatch()
     // this is to open and close the form
@@ -112,11 +111,11 @@ const TaskBar = () => {
                         value={value.assigned_user}
                         onChange={handleChange}
                     >
-                        {
+                        {/* {
                             assigneduser.results.data.map((set, index) => (
                                 <option key={index}>{ set.name }</option>
                             ))
-                        }
+                        } */}
                     </select>
                 </div>
 
