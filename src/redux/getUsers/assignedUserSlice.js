@@ -36,7 +36,7 @@ export const getUser = createAsyncThunk('auth/getAssigned', async (_, thunkAPI) 
 // export const getUsers = 
 
 export const assignedUserSlice = createSlice({
-    name: "auth",
+    name: "assigneduser",
     initialState,
 
     reducers: {

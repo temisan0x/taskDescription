@@ -18,7 +18,8 @@ const TaskBar = () => {
 
     const { assigneduser } = useSelector((state) => state.assignedUser)
     console.log(assigneduser)
-    // const { user } = useSelector((state) => state.auth)
+    const { user } = useSelector((state) => state.auth)
+    console.log(user);
 
     // const dispatch = useDispatch()
     // this is to open and close the form
