@@ -17,7 +17,7 @@ import { useSelector } from 'react-redux';
 const TaskBar = () => {
 
     const { assigneduser } = useSelector((state) => state.assignedUser)
-    console.log(assignedUser)
+    console.log(assigneduser)
     // const { user } = useSelector((state) => state.auth)
 
     // const dispatch = useDispatch()
